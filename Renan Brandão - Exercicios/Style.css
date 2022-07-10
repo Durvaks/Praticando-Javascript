@@ -3,6 +3,7 @@ body{
     color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*Inicio layout Topo da pagina*/
 header{
@@ -11,7 +12,6 @@ header{
 }
 .titulo-logo{
     font-size: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: .1em;
     font-style:italic;
     margin-left: 10px;
@@ -29,7 +29,6 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgb(2, 1, 27);
     display: block;
     width: 100px;
 }
@@ -47,7 +46,6 @@ nav{
 
 /*area onde ficaram meus projetos*/
 .projeto{
-    background-color: rgb(255, 255, 255);
     width: 90vw;
     height: 65vh;
     margin: 50px auto;
@@ -87,4 +85,40 @@ button:hover{
 .mais{
     grid-column: 4/-1;
     grid-row: 5/-1;
+}
+
+/*cadastro de produtos*/
+.cadastro-produtos{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    
+}
+label{
+    padding: 5px 0;
+}
+.listaDeProdutos{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: white;
+}
+#nome, #email, #telefone{
+    height: 25px;
+    border-radius: 5px;
+}
+.botao{
+    padding: 10px;
+    margin: 20px 20px 0 0;
+    width: 135px;
+    font-size: 12px;
+    border-radius: 5px;  
+}
+.tabela{
+    text-align: center;    
+    border-collapse: collapse;  
+}
+.tabela th, .tabela td{
+    border: 1px solid white;
+    padding: 2px 5px;
 }
